@@ -1,0 +1,95 @@
+@font-face {font-family: "Poetsen One";
+  src: url("fonts/e7f249e71a563eed9c495835657eb9c2.eot"); /* IE9*/
+  src: url("fonts/e7f249e71a563eed9c495835657eb9c2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("fonts/e7f249e71a563eed9c495835657eb9c2.woff2") format("woff2"), /* chrome、firefox */
+  url("fonts/e7f249e71a563eed9c495835657eb9c2.woff") format("woff"), /* chrome、firefox */
+  url("fonts/e7f249e71a563eed9c495835657eb9c2.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("fonts/e7f249e71a563eed9c495835657eb9c2.svg#Poetsen One") format("svg"); /* iOS 4.1- */
+}
+
+html * {
+	font-family: 'Poetsen One', arial;
+}
+
+body {
+	background: #B3CDFF;
+}
+
+.nav_bar {
+	width: 100%;
+	height: 80px;
+	background: #F5F5F5;
+	display: flex;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+.nav_beg img {
+	height: 70px;
+	margin-bottom: 10px;
+}
+
+.nav_beg p {
+	font-size: 36px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+.nav_beg {
+	width: 35%;
+	display: flex;
+	align-items: center;
+}
+
+.siderec {
+	width: 100%;
+	margin-bottom: 5px;
+	height: 3px;
+	background: #C4C4C4;
+	margin-right: none;
+}
+
+.sidemenu {
+	display: table;
+	width: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.nav_rest {
+	width: 65%;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 2%;
+}
+
+.nav_rest form {
+	width: 35%;
+	display: flex;
+	align-items: center;
+	margin-right: 5%;
+}
+
+.nav_rest input {
+	width: 100%;
+	height: 28px;
+	background: #E6E6E6;
+	border-radius: 15px;
+	border: 1px solid black;
+	text-indent: 15px;
+	opacity: .5;
+}
+
+.access_btn {
+	width: 13%;
+	height: 40px;
+	background: #C4C4C4;
+	margin-left: 3.5%;
+	border-radius: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
