@@ -13,6 +13,7 @@ html * {
 
 body {
 	background: #B3CDFF;
+	margin: 0px;
 }
 
 .nav_bar {
@@ -31,7 +32,7 @@ body {
 }
 
 .nav_beg p {
-	font-size: 36px;
+	font-size: 32px;
 	margin-top: 0px;
 	margin-bottom: 10px;
 	margin-right: 5px;
@@ -48,14 +49,13 @@ body {
 	margin-bottom: 5px;
 	height: 3px;
 	background: #C4C4C4;
-	margin-right: none;
 }
 
 .sidemenu {
 	display: table;
-	width: 5%;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .nav_rest {
@@ -83,13 +83,85 @@ body {
 }
 
 .access_btn {
-	width: 13%;
+	width: 100px;
 	height: 40px;
 	background: #C4C4C4;
-	margin-left: 3.5%;
+	margin-left: 20px;
+	margin-right: 0px;
 	border-radius: 20px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
+.signup {
+	color: white;
+}
+
+.content {
+	width: 96%;
+	height: 400px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome {
+	width: 55%;
+	display: table;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome_img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.welcome_img img {
+	height: 150px;
+}
+
+.welcome h1 {
+	font-size: 42px;
+	text-align: center;
+}
+
+.clickme {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.half {
+	width: 50%;
+	display: table;
+	align-items: center;
+	justify-content: center;
+	padding: 6%;
+}
+
+.half h1, p {
+	text-align: center;
+}
+
+.data {
+	background: #E6E6E6;
+	width: 100%;
+	height: 350px;
+	margin-top: 25px;
+	border-radius: 25px;
+}
+
+.ending {
+	width: 100%;
+	background: #F5F5F5;
+	height: 100px;
+	border: 1px solid black;
+}
+
