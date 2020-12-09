@@ -110,6 +110,15 @@ body {
 	align-items: center;
 }
 
+.about_content {
+	width: 96%;
+	height: 400px;
+	margin-bottom: 50px;
+	padding: 2%;
+	display: flex;
+	justify-content: center;
+}
+
 .welcome {
 	width: 55%;
 	display: table;
@@ -127,9 +136,12 @@ body {
 	height: 150px;
 }
 
-.welcome h1 {
-	font-size: 42px;
+.welcome h1, h2, h3 {
 	text-align: center;
+}
+
+.welcome h1 {
+	font-size: 38px; 
 }
 
 .clickme {
@@ -143,7 +155,7 @@ body {
 	display: table;
 	align-items: center;
 	justify-content: center;
-	padding: 6%;
+	padding: 8%;
 }
 
 .half h1, p {
@@ -161,7 +173,7 @@ body {
 .ending {
 	width: 100%;
 	background: #F5F5F5;
-	height: 100px;
+	height: 50px;
 	border: 1px solid black;
 }
 
