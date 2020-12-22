@@ -13,7 +13,7 @@ html * {
 
 body {
 	background: #B3CDFF;
-	margin: 0px;
+	margin-bottom: 0px;
 }
 
 .nav_bar {
@@ -24,6 +24,10 @@ body {
 	align-items: center;
 	border: 1px solid black;
 	border-radius: 25px;
+}
+
+.nav_bar a:link, a:active, a:visted, a:hover {
+	text-decoration: none;
 }
 
 .nav_beg img {
@@ -48,15 +52,43 @@ body {
 	width: 100%;
 	margin-bottom: 5px;
 	height: 3px;
-	background: #C4C4C4;
+	background: #8C8C8C;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .sidemenu {
-	display: table;
+	display: inline-block;
+	flex-direction: column;
 	width: 25px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+ 	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sidemenu:hover {
+	width: 35px;
+}
+
+.sidemenu:hover a:hover {
+	background: #8C8C8C;
+}
+
+.sidemenu:hover .dropdown {display: block;}
 
 .nav_rest {
 	width: 65%;
@@ -85,7 +117,7 @@ body {
 .access_btn {
 	width: 100px;
 	height: 40px;
-	background: #C4C4C4;
+	background: #8C8C8C;
 	margin-left: 20px;
 	margin-right: 0px;
 	border-radius: 20px;
@@ -93,6 +125,15 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.access_btn a {
+	color: black;
+	text-decoration: none;
+}
+
+.access_btn a:hover {
+	text-decoration: underline;
 }
 
 .signup {
@@ -162,6 +203,13 @@ body {
 	text-align: center;
 }
 
+.third {
+	width: 33%;
+	display: table;
+	align-items: center;
+	justify-content: center;
+}
+
 .data {
 	background: #E6E6E6;
 	width: 100%;
@@ -171,9 +219,23 @@ body {
 }
 
 .ending {
-	width: 100%;
+	width: 110%;
 	background: #F5F5F5;
 	height: 50px;
 	border: 1px solid black;
+	position: relative;
+	left: -20px;
+
+}
+
+.fixed_ending {
+	width: 110%;
+	background: #F5F5F5;
+	height: 50px;
+	border: 1px solid black;
+	position: fixed;
+	bottom: -0%;
+	left: -20px;
+
 }
 

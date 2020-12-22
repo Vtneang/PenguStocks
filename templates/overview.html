@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/common.css') }}">
+	<title> Pengu Stocks | Overview </title>
+</head>
+<body>
+
+	<!-- Nav bar stuff -->
+	<div class="nav_bar">
+		<div class="nav_beg">
+			<div class="sidemenu">
+				<div class="siderec"></div>
+				<div class="siderec"></div>
+				<div class="siderec"></div>
+				<div class="dropdown">
+					<a href="{{ url_for('index') }}"> - Home </a>
+					<a href=""> - Overview </a>
+					<a href="{{ url_for('about') }}"> - About </a>
+					<a href=""> - Contact </a>
+				</div>
+			</div>
+			<a href="{{ url_for('index') }}">
+				<p> Pengu Stocks </p>
+			</a>
+			<img src="{{ url_for('static', filename= 'images/cutout_pengu.png') }}">
+		</div>
+		<div class="nav_rest">
+			<form>
+				<input type="text" name="" placeholder="Search...">
+			</form>
+			<div class="access_btn">
+				<p class="signup"> Log out </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="about_content">
+		<div class="welcome">
+			<h1> Welcome Back, </h1>
+			<br>
+		</div>
+	</div>
+
+	<div class="fixed_ending"></div>
+
+</body>
+</html>

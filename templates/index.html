@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="common.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/common.css') }}">
 	<title> Pengu Stocks | Home </title>
 </head>
 <body>
@@ -12,19 +12,25 @@
 				<div class="siderec"></div>
 				<div class="siderec"></div>
 				<div class="siderec"></div>
+				<div class="dropdown">
+					<a href="{{ url_for('index') }}"> - Home </a>
+					<a href=""> - Overview </a>
+					<a href="{{ url_for('about') }}"> - About </a>
+					<a href=""> - Contact </a>
+				</div>
 			</div>
 			<p> Pengu Stocks </p>
-			<img src="cutout_pengu.png">
+			<img src="{{ url_for('static', filename= 'images/cutout_pengu.png') }}">
 		</div>
 		<div class="nav_rest">
 			<form>
 				<input type="text" name="" placeholder="Search...">
 			</form>
 			<div class="access_btn">
-				<p> Log in</p>
+				<a href=""> Log in </a>
 			</div>
 			<div class="access_btn">
-				<p class="signup"> Sign up</p>
+				<a href=""> Sign Up </a>
 			</div>
 		</div>
 	</div>
@@ -33,11 +39,11 @@
 	<!-- The rest of the page -->
 	<div class="content">
 		<div class="welcome">
-			<h1> Be the first to dive in with </h1>
-			<h1> our no risk investing </h1>
+			<h1> Be the first to dive in with our</h1>
+			<h1> no risk investing... </h1>
 			<div class="clickme">
 				<div class="access_btn">
-					<p class="signup"> Start Now </p>
+					<a href="" style="color:white;"> Start Now </a>
 				</div>
 			</div>
 		</div>
@@ -75,14 +81,20 @@
 			<p> So Sign up NOW!</p>
 			<div class="clickme">
 				<div class="access_btn">
-					<p class="signup"> Sign up </p>
+					<a href="" style="color:white;"> Sign up </a>
 				</div>
 			</div>
 			<div class="welcome_img">
-				<img src="cutout_pengu.png">
+				<img src="{{ url_for('static', filename= 'images/cutout_pengu.png') }}">
 			</div>
 		</div>
 	</div>
+	<div class="content" id="stocks">
+	</div>
 	<div class="ending"></div>
+
+	<!-- Ending JS files -->
+	<script type="text/javascript" src="{{ url_for('static', filename= 'javascript/stock.js') }}"></script>
+
 </body>
 </html>
